@@ -1,0 +1,74 @@
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\App.g.i.cs
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\App.g.cs
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.g.i.cs
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.g.cs
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\XamlTypeInfo.g.cs
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\App.xaml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\App.xbf
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\XamlSaveStateFile.xml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\App.xbf
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Views\MainPage.xbf
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.exe
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.pdb
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\resources.pri
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\AppxManifest.xml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.build.appxrecipe
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.xaml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.xbf
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Wikivid1.0.exe
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Wikivid1.0.pdb
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\priconfig.xml
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\priconfig.xml.intermediate
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\layout.resfiles
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\layout.resfiles.intermediate
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\resources.resfiles
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\resources.resfiles.intermediate
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\pri.resfiles
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\pri.resfiles.intermediate
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt.intermediate
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\ruthwik\documents\visual studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\ProjectArchitectures.txt
+C:\Users\Ruthwik\Documents\Visual Studio 2013\Projects\Wikivid1.0\Wikivid1.0\bin\Debug\Views\WikiResult.xbf
+C:\Users\Ruthwik\Documents\Visual Studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.g.i.cs
+C:\Users\Ruthwik\Documents\Visual Studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.g.cs
+C:\Users\Ruthwik\Documents\Visual Studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.xaml
+C:\Users\Ruthwik\Documents\Visual Studio 2013\Projects\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.xbf
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\App.xbf
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Views\MainPage.xbf
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Views\WikiResult.xbf
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.exe
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.pdb
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\resources.pri
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\AppxManifest.xml
+E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.build.appxrecipe
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\App.g.i.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\App.g.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.g.i.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.g.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.g.i.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.g.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\XamlTypeInfo.g.cs
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\App.xaml
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.xaml
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.xaml
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\App.xbf
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\MainPage.xbf
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Views\WikiResult.xbf
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\XamlSaveStateFile.xml
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Wikivid1.0.exe
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\Wikivid1.0.pdb
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\priconfig.xml
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\priconfig.xml.intermediate
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\layout.resfiles
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\layout.resfiles.intermediate
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\resources.resfiles
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\resources.resfiles.intermediate
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\pri.resfiles
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\pri.resfiles.intermediate
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt.intermediate
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\Wikivid1.0\Wikivid1.0\obj\Debug\ProjectArchitectures.txt
