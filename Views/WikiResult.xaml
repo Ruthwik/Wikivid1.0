@@ -37,8 +37,6 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <Button Content="CLICK" Click="Button_Click"/>
-
             <StackPanel VerticalAlignment="Top" Grid.Row="0" Orientation="Vertical">
 
                 <StackPanel Orientation="Horizontal" Margin="5,20,0,0">
