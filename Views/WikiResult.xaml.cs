@@ -159,14 +159,41 @@ namespace Wikivid1._0.Views
 
         }
 
-        private void MyWebview_Loaded(object sender, RoutedEventArgs e)
+        private void WebView_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
         {
-            
-            string html =  @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
+            string html = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
             WebView v = (WebView)sender;
-            string b = v.Tag.ToString();
-            v.NavigateToString(b);
-            
+            if (v.Tag != null)
+            {
+                string b = v.Tag.ToString();
+                v.NavigateToString(b);
+            }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            StackPanel sp = (StackPanel)b.Parent;
+            TextBlock myTB = (from child in sp.Children
+                              where child is TextBlock && ((TextBlock)child).Tag.Equals("2")
+                              select (TextBlock)child).FirstOrDefault();
+            myTB.MaxLines = int.MaxValue;
+
+        }
+
+        private void TextBlock_Loaded(object sender, RoutedEventArgs e)
+        {
+            TextBlock tb = (TextBlock)sender;
+            double Lines = tb.ActualHeight / tb.FontSize;
+            StackPanel sp = (StackPanel)tb.Parent;
+            Button myTB = (from child in sp.Children
+                           where child is Button
+                           select (Button)child).FirstOrDefault();
+            if (Lines < 19)
+            {
+                myTB.Visibility = Visibility.Collapsed;
+            }
+        }
+
     }
 }

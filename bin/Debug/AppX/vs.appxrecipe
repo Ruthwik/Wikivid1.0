@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>M-1935</Machine>
-    <WindowsUser>Admin</WindowsUser>
+    <Machine>LAPP-E</Machine>
+    <WindowsUser>Ruthwik</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3c1263e-7b9d-497c-ad8e-5229d3d78c36</PackageIdentityName>
-    <IntermediateOutputPath>E:\Wikivid1.0\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>A056B4A4CD7827576E1C90FE772377AF51092B7949F7D97B0535F948DABAB791</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_1.0.0.0_neutral__baj3f2dng8cba</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_baj3f2dng8cba!App</RegisteredUserModeAppID>
@@ -17,60 +17,60 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T12:13:26.288</Modified>
+      <Modified>2015-02-14T18:46:23.513</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-14T12:20:20.354</Modified>
+      <Modified>2015-02-14T19:00:46.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T00:31:02.000</Modified>
+      <Modified>2015-02-14T12:34:10.037</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T00:31:02.000</Modified>
+      <Modified>2015-02-14T12:34:10.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-13T18:51:09.572</Modified>
+      <Modified>2015-02-14T12:34:10.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T00:31:02.000</Modified>
+      <Modified>2015-02-14T12:34:10.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\Assets\maxresdefault.jpg">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\maxresdefault.jpg">
       <PackagePath>Assets\maxresdefault.jpg</PackagePath>
-      <Modified>2015-02-13T19:26:13.929</Modified>
+      <Modified>2015-02-14T12:34:10.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-13T19:17:21.912</Modified>
+      <Modified>2015-02-14T18:46:21.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-14T11:33:58.881</Modified>
+      <Modified>2015-02-14T18:46:21.870</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-14T12:19:42.207</Modified>
+      <Modified>2015-02-14T19:00:46.578</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-14T12:19:42.198</Modified>
+      <Modified>2015-02-14T19:00:46.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Wikivid1.0\Wikivid1.0\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-14T12:13:26.156</Modified>
+      <Modified>2015-02-14T18:46:23.033</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

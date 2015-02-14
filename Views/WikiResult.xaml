@@ -10,15 +10,9 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
+        <x:String x:Key="AppName">WikiVid</x:String>
     </Page.Resources>
-
     <!--
-        This grid acts as a root panel for the page that defines two rows:
-        * Row 0 contains the back button and page title
-        * Row 1 contains the rest of the page layout
-    -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"  MinWidth="230" MaxWidth="600"/>
@@ -61,19 +55,6 @@
                     <TextBlock x:Name="StatusBlock" Foreground="White" FontWeight="Bold" MaxHeight="200" TextTrimming="CharacterEllipsis"  Margin="20,10,10,20" TextWrapping="Wrap" />
                 </Border>
             </StackPanel>
-            <!-- <StackPanel Grid.Row="3" Orientation="Vertical" Margin="10,0,5,10" VerticalAlignment="Bottom" >
-                <Image Source="Assets/microsoft-sdk.png"  Stretch="None" HorizontalAlignment="Left"/>
-                <TextBlock Text="&#xA9; Microsoft Corporation. All rights reserved." Foreground="White" Style="{StaticResource CopyrightTextStyle}"/>
-                <StackPanel x:Name="FooterPanel" Orientation="Horizontal" HorizontalAlignment="Left">
-                   <HyperlinkButton Content="Terms" Tag="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Copyright/default.aspx"
-                        Click="Footer_Click" FontSize="12" Style="{StaticResource HyperlinkStyle}"/>
-                    <TextBlock Text="|" Style="{StaticResource SeparatorStyle}" VerticalAlignment="Center"/>
-                    <HyperlinkButton Content="Trademarks" Tag="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx"
-                        Click="Footer_Click" FontSize="12" Style="{StaticResource HyperlinkStyle}"/>
-                    <TextBlock Text="|"  Style="{StaticResource SeparatorStyle}" VerticalAlignment="Center"/>
-                    <HyperlinkButton Content="Privacy" Tag="http://privacy.microsoft.com" Click="Footer_Click" FontSize="12" Style="{StaticResource HyperlinkStyle}"/>
-                </StackPanel>
-            </StackPanel>-->
         </Grid>
 
 
@@ -83,72 +64,54 @@
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="{Binding Title}" FontSize="30" />
                         <TextBlock Text="{Binding Text}" FontSize="15" />
-                     <!--   <WebView Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390" Loaded="MyWebview_Loaded"/> -->
+                        <WebView Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390" Loaded="MyWebview_Loaded"/> 
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-       <!-- <WebView x:Name="MyWebview" Grid.Column="1" DefaultBackgroundColor="Black" Width="640" Height="390"/> -->
     </Grid>
+-->
+    <Grid Background="WhiteSmoke">
 
-
-
-
-
-
-
-    <!-- <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="150" />
+            <RowDefinition Height="*"  />
         </Grid.RowDefinitions>
 
-        Back button and page title 
-        <Grid>
+        <Grid Grid.Row="0" Background="#FFECECEC">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="1000" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            
-            <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0,60,0,40">
-            <TextBlock x:Name="pageTitle" Text="Results Page" Style="{StaticResource HeaderTextBlockStyle}" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom"  SelectionChanged="pageTitle_SelectionChanged"/>
-
-                
-            </StackPanel>
+            <Button Grid.Column="1" x:Name="backButton" Grid.Row="0"  Margin="41,53,0,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button" RenderTransformOrigin="1.341,0.317" Background="#FF080808" Foreground="Black" BorderBrush="Black"/>
+            <Image Grid.Column="1" HorizontalAlignment="Left" Margin="82,0,0,0" VerticalAlignment="Top" Width="298" Source="ms-appx:///Assets/SplashScreen.png"/>
+            <SearchBox  x:Name="SearchBoxSuggestions" Grid.Column="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="37" Width="233"/>
         </Grid>
-       <WebView x:Name="MyWebview" Source="{Binding Path=html}" Grid.Row="1" Margin="100" Width="640" Height="390"/>
-        <ListView Grid.Row="1" Margin="10" ItemsSource="{Binding Path='_SubContent'}" Background="Wheat">
-          < <ListView.Resources>
-                <DataTemplate x:Key="SubContentTemplate">
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding Path=heading}" Foreground="Black" FontSize="30"></TextBlock>
-                        <TextBlock Text="{Binding Path=text}" Foreground="Black" FontSize="30"></TextBlock>
-                        <TextBlock Text="{Binding Path=youtubePath}" Foreground="Black" FontSize="30"></TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.Resources>
+
+        <ListView SelectionMode="None" x:Name="lw" ItemsSource="{Binding Path=di,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="White" VerticalAlignment="Stretch" Height="Auto"  Grid.Row="1" >
+
             <ListView.ItemTemplate>
-                <StaticResource ResourceKey="SubContentTemplate"/>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Vertical" Grid.Column="0">
+                            <TextBlock Tag="1" Text="{Binding Title}" FontSize="30" Foreground="Black" />
+                            <TextBlock Tag="2" Text="{Binding Text}" FontSize="15" Foreground="Black" TextWrapping="WrapWholeWords" MaxLines="15" Loaded="TextBlock_Loaded" />
+                            <Button Content="Read More" Click="Button_Click" Height="30" Width="100" Background="Black"/>
+                        </StackPanel>
+                        <WebView VerticalAlignment="Top" Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390"  DataContextChanged="WebView_DataContextChanged" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
             </ListView.ItemTemplate>
-
-            <ListViewItem>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="fefe" Foreground="Black" FontSize="30" Margin="0,0,10,0"></TextBlock>
-                    <TextBlock Text="fofo}" Foreground="Black" FontSize="30" Margin="0,0,10,0"></TextBlock>
-                    <TextBlock Text="tts" Foreground="Black" FontSize="30" Margin="0,0,10,0"></TextBlock>
-            </StackPanel>
-            </ListViewItem>
         </ListView>
-
-
-    </Grid> -->
-
-
-
-
+    </Grid>
 </Page>

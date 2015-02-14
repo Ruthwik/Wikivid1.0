@@ -72,3 +72,40 @@ E:\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt
 E:\Wikivid1.0\Wikivid1.0\obj\Debug\qualifiers.txt.intermediate
 E:\Wikivid1.0\Wikivid1.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Wikivid1.0\Wikivid1.0\obj\Debug\ProjectArchitectures.txt
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\App.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\MainPage.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\WikiResult.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.exe
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.pdb
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\resources.pri
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\AppxManifest.xml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.build.appxrecipe
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\App.g.i.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\App.g.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\MainPage.g.i.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\MainPage.g.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\WikiResult.g.i.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\WikiResult.g.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\XamlTypeInfo.g.cs
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\App.xaml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\MainPage.xaml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\WikiResult.xaml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\App.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\MainPage.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Views\WikiResult.xbf
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\XamlSaveStateFile.xml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Wikivid1.0.exe
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\Wikivid1.0.pdb
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\priconfig.xml
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\priconfig.xml.intermediate
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\layout.resfiles
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\layout.resfiles.intermediate
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\resources.resfiles
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\resources.resfiles.intermediate
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\pri.resfiles
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\pri.resfiles.intermediate
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\qualifiers.txt
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\qualifiers.txt.intermediate
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\ProjectArchitectures.txt
