@@ -76,14 +76,14 @@
             </StackPanel>-->
         </Grid>
 
-        
-        <ListView x:Name="lw" Margin="5,5,5,25" ItemsSource="{Binding Path=_SubContent}" Background="Wheat" Grid.Column="1" >
+
+        <ListView x:Name="lw" Margin="5,5,5,25" ItemsSource="{Binding Path=di,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="Wheat" Grid.Column="1" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding heading}" FontSize="30" />
-                        <TextBlock Text="{Binding text}" FontSize="15" />
-                        <WebView Tag="{Binding youtubePath}" DefaultBackgroundColor="Black" Width="640" Height="390" Loaded="MyWebview_Loaded"/> 
+                        <TextBlock Text="{Binding Title}" FontSize="30" />
+                        <TextBlock Text="{Binding Text}" FontSize="15" />
+                     <!--   <WebView Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390" Loaded="MyWebview_Loaded"/> -->
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

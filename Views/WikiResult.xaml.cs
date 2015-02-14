@@ -139,8 +139,12 @@ namespace Wikivid1._0.Views
         {
             navigationHelper.OnNavigatedTo(e);
             SearchQuery sq = (SearchQuery)e.Parameter;
-            this.DataContext = new WikiResultViewModel();
-            MediaWikiHelper.CheckIfExists(sq.Query);
+
+           // WikiFetch c = new WikiFetch();
+           // c.fetch("http://en.wikipedia.org/wiki/" + sq.Query.Replace(" ","_"));
+
+            this.DataContext = new WikiResultViewModel("http://en.wikipedia.org/wiki/" + sq.Query.Replace(" ", "_"));
+            
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

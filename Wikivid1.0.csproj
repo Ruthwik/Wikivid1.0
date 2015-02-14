@@ -114,6 +114,7 @@
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\WikiFetch.cs" />
     <Compile Include="Model\SearchQuery.cs" />
     <Compile Include="Model\SubContent.cs" />
     <Compile Include="ViewModel\MainPageViewModel.cs" />
