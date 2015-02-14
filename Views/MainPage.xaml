@@ -14,7 +14,7 @@
                 <ImageBrush ImageSource="ms-appx:///Assets/maxresdefault.jpg" Stretch="UniformToFill"/>
             </StackPanel.Background>
             
-            <SearchBox x:Name="SearchBoxSuggestions" Height="35" Width="400" Margin="0,300,0,0" SuggestionsRequested="SearchBoxEventsSuggestionsRequested" HorizontalAlignment="Center" VerticalAlignment="Center"  FocusOnKeyboardInput="True"/>
+            <SearchBox x:Name="SearchBoxSuggestions" Height="35" Width="400" Margin="0,300,0,0" SuggestionsRequested="SearchBoxEventsSuggestionsRequested" ResultSuggestionChosen="SearchBoxSuggestions_ResultSuggestionChosen"  QuerySubmitted="SearchBoxSuggestions_QuerySubmitted" HorizontalAlignment="Center" VerticalAlignment="Center"  FocusOnKeyboardInput="True"/>
             <TextBlock x:Name="tbError" Height="35" Width="Auto" Text="Type to Explore" FontSize="25" Foreground="Black"></TextBlock>
         </StackPanel>
     </Grid>

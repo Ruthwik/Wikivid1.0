@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Wikivid1._0.ViewModel;
+using Wikivid1._0.Model;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -51,7 +52,7 @@ namespace Wikivid1._0.Views
         {
             string html;
             this.InitializeComponent();
-            this.DataContext = new WikiResultViewModel();
+            
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
@@ -137,6 +138,9 @@ namespace Wikivid1._0.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
+            SearchQuery sq = (SearchQuery)e.Parameter;
+            this.DataContext = new WikiResultViewModel();
+            MediaWikiHelper.CheckIfExists(sq.Query);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

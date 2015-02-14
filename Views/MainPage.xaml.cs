@@ -5,10 +5,13 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Wikivid1._0.Model;
 using Windows.ApplicationModel.Search;
 using Windows.Data.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage.Streams;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -56,9 +59,14 @@ namespace Wikivid1._0
             JsonArray parsedResponse = JsonArray.Parse(response);
             if (parsedResponse.Count > 1)
             {
+                suggestions.AppendSearchSeparator("Exact Match");
                 foreach (JsonValue value in parsedResponse[1].GetArray())
                 {
-                    suggestions.AppendQuerySuggestion(value.GetString());
+                    //suggestions.AppendQuerySuggestion(value.GetString());
+                    var imageUri = new Uri("ms-appx:///test.png");
+                    var imageRef = RandomAccessStreamReference.CreateFromUri(imageUri);
+                    suggestions.AppendResultSuggestion(value.GetString(), "", value.GetString(), imageRef, "");
+                    //suggestions.AppendResultSuggestion(value.GetString(), "Details", "baz", imageRef, "Result");
                 }
             }
         }
@@ -124,6 +132,28 @@ namespace Wikivid1._0
                     deferral.Complete();
                 }
             }
+        }
+
+        private void SearchBoxSuggestions_ResultSuggestionChosen(SearchBox sender, SearchBoxResultSuggestionChosenEventArgs args)
+        {
+            string chosen = args.Tag.ToString();
+            SearchQuery sq = new SearchQuery()
+            {
+                 Query = chosen,
+                  ExaxtMatch = 1
+            };
+            this.Frame.Navigate(typeof(Views.WikiResult), sq);
+        }
+
+        private void SearchBoxSuggestions_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+            string chosen = args.QueryText;
+            SearchQuery sq = new SearchQuery()
+            {
+                Query = chosen,
+                ExaxtMatch = 0
+            };
+            this.Frame.Navigate(typeof(Views.WikiResult), sq);
         }
     }
 }
