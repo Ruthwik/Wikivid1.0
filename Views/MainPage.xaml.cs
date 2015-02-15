@@ -34,11 +34,12 @@ namespace Wikivid1._0
         private Task<string> currentHttpTask;
         private HttpClient httpClient;
         private IAsyncOperation<XmlDocument> currentXmlRequestOp;
-
+        
         public MainPage()
         {
             this.InitializeComponent();
             httpClient = new HttpClient();
+            
         }
 
         private void AddSuggestionFromNode(IXmlNode node, SearchSuggestionCollection suggestions)
@@ -143,6 +144,25 @@ namespace Wikivid1._0
             }
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            try
+            { 
+            string text = (string)e.Parameter;
+                if((text!=string.Empty)&&(text!=null))
+                {
+                    if(text.Equals("BAD"))
+                    {
+                        tbError.Text = "Sorry, Search Invalid. Please Search Again";
+                    }
+                }
+            }
+            catch(Exception es)
+            {
+
+            }
+
+        }
         /// <summary>
         /// Populates SearchBox with Suggestions when user enters text
         /// </summary>
@@ -154,7 +174,7 @@ namespace Wikivid1._0
             string url="";
             if (string.IsNullOrEmpty(queryText))
             {
-                tbError.Text = "Use the search control to submit a query";
+                //tbError.Text = "Use the search control to submit a query";
                 //MainPage.Current.NotifyUser("Use the search control to submit a query", NotifyType.StatusMessage);
             }
             else

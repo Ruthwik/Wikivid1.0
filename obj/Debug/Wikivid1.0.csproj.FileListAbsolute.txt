@@ -237,3 +237,5 @@ C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\qualifiers.txt
 C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\qualifiers.txt.intermediate
 C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\ProjectArchitectures.txt
+C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.dll

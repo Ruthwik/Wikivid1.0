@@ -51,8 +51,8 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Name" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Tag" />
       <RootProperty Name="TextWrapping" />

@@ -1,1 +1,1 @@
-C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Wikivid1.0.csproj;neutral
+C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Wikivid1.0.csproj;neutral

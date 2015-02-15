@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SWATI</Machine>
-    <WindowsUser>swatisharma</WindowsUser>
+    <Machine>PRIYANK</Machine>
+    <WindowsUser>priyank-pc</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3c1263e-7b9d-497c-ad8e-5229d3d78c36</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>A056B4A4CD7827576E1C90FE772377AF51092B7949F7D97B0535F948DABAB791</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_1.0.0.0_neutral__baj3f2dng8cba</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_baj3f2dng8cba!App</RegisteredUserModeAppID>
@@ -17,104 +17,104 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-15T14:24:32.741</Modified>
+      <Modified>2015-02-15T05:02:34.491</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T15:11:50.414</Modified>
+      <Modified>2015-02-15T05:42:07.814</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
-      <Modified>2015-02-14T19:28:14.921</Modified>
+      <Modified>2015-02-15T01:31:50.030</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.PlatformServices.dll">
       <PackagePath>Google.Apis.Auth.PlatformServices.dll</PackagePath>
-      <Modified>2015-02-14T19:28:14.942</Modified>
+      <Modified>2015-02-15T01:31:50.007</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Core.1.9.1\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Core.1.9.1\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll">
       <PackagePath>Google.Apis.Core.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.651</Modified>
+      <Modified>2015-02-15T01:31:50.297</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.dll">
       <PackagePath>Google.Apis.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.753</Modified>
+      <Modified>2015-02-15T01:31:49.620</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.PlatformServices.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.PlatformServices.dll">
       <PackagePath>Google.Apis.PlatformServices.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.775</Modified>
+      <Modified>2015-02-15T01:31:49.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.YouTube.v3.1.9.0.1260\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.YouTube.v3.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.YouTube.v3.1.9.0.1260\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.YouTube.v3.dll">
       <PackagePath>Google.Apis.YouTube.v3.dll</PackagePath>
-      <Modified>2015-02-14T19:28:20.989</Modified>
+      <Modified>2015-02-15T01:31:50.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\lib\Microsoft.Threading.Tasks.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\lib\Microsoft.Threading.Tasks.Extensions.dll">
       <PackagePath>Microsoft.Threading.Tasks.Extensions.dll</PackagePath>
-      <Modified>2015-02-14T22:54:36.398</Modified>
+      <Modified>2015-02-15T01:31:49.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.476</Modified>
+      <Modified>2015-02-15T01:31:53.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.124</Modified>
+      <Modified>2015-02-15T01:31:52.633</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
-      <Modified>2015-02-14T19:28:04.146</Modified>
+      <Modified>2015-02-15T01:31:52.647</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
-      <Modified>2015-02-14T22:54:36.358</Modified>
+      <Modified>2015-02-15T01:31:48.804</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-02-14T19:16:31.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-02-14T19:16:31.042</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-02-14T19:16:31.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-02-14T19:16:31.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\maxresdefault.jpg">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\maxresdefault.jpg">
       <PackagePath>Assets\maxresdefault.jpg</PackagePath>
       <Modified>2015-02-14T19:16:31.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-15T13:26:29.044</Modified>
+      <Modified>2015-02-15T05:02:32.905</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-15T13:26:29.049</Modified>
+      <Modified>2015-02-15T05:42:07.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T14:41:04.586</Modified>
+      <Modified>2015-02-15T05:02:32.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-15T13:58:42.034</Modified>
+      <Modified>2015-02-15T05:42:07.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-15T14:24:32.591</Modified>
+      <Modified>2015-02-15T05:02:34.272</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
