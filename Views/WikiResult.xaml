@@ -91,7 +91,7 @@
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button" RenderTransformOrigin="1.341,0.317" Background="#FF080808" Foreground="Black" BorderBrush="Black"/>
             <Image Grid.Column="1" HorizontalAlignment="Left" Margin="82,0,0,0" VerticalAlignment="Top" Width="298" Source="ms-appx:///Assets/SplashScreen.png"/>
-            <SearchBox  x:Name="SearchBoxSuggestions" Grid.Column="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="37" Width="233"/>
+            <SearchBox  x:Name="SearchBoxSuggestions" Grid.Column="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="37" Width="233" SuggestionsRequested="SearchBoxEventsSuggestionsRequested" ResultSuggestionChosen="SearchBoxSuggestions_ResultSuggestionChosen"  QuerySubmitted="SearchBoxSuggestions_QuerySubmitted"/>
         </Grid>
 
         <ListView SelectionMode="None" x:Name="lw" ItemsSource="{Binding Path=di,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="White" VerticalAlignment="Stretch" Height="Auto"  Grid.Row="1" Margin="40,0,40,0" >
@@ -116,7 +116,7 @@
             </ListView.ItemTemplate>
         </ListView>
         <StackPanel Orientation="Vertical"  Grid.Row="1">
-        <ProgressRing IsActive="True"  Name="ProgressRing"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="90" Margin="0,20,0,20"  Width="90" Foreground="#FF682CF3"></ProgressRing>
+            <ProgressRing IsActive="True"  Name="ProgressRing"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="90" Margin="0,20,0,20"  Width="90" Foreground="#FF682CF3"></ProgressRing>
             <TextBlock Name="ProgressText" Text="This may take up to 40 seconds" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="25" Foreground="Black"></TextBlock>
         </StackPanel>
 

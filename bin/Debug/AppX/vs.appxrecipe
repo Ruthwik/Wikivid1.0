@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-15T13:26:30.236</Modified>
+      <Modified>2015-02-15T14:24:32.741</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T13:58:42.588</Modified>
+      <Modified>2015-02-15T14:24:32.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T13:58:42.058</Modified>
+      <Modified>2015-02-15T14:24:31.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
@@ -114,7 +114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-15T13:26:29.919</Modified>
+      <Modified>2015-02-15T14:24:32.591</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
