@@ -56,7 +56,7 @@ namespace Wikivid1._0.Views
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
-            
+            DispatcherTimerSetup();
             //html = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
            // WebView v = (WebView)FindChildControl<WebView>(lw);
             //this.MyWebview.NavigateToString(html);
@@ -201,6 +201,8 @@ namespace Wikivid1._0.Views
             if (tB.Text != null)
             {
                 ProgressRing.Visibility = Visibility.Collapsed;
+                dispatcherTimer.Stop();
+                ProgressText.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -226,5 +228,49 @@ namespace Wikivid1._0.Views
             }
         }
 
+
+        DispatcherTimer dispatcherTimer;
+        DateTimeOffset startTime;
+        DateTimeOffset lastTime;
+        DateTimeOffset stopTime;
+        int timesTicked = 1;
+        int timesToTick = 10;
+
+        public void DispatcherTimerSetup()
+        {
+            dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += dispatcherTimer_Tick;
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 3);
+            startTime = DateTimeOffset.Now;
+            lastTime = startTime;
+            dispatcherTimer.Start();
+        }
+
+        void dispatcherTimer_Tick(object sender, object e)
+        {
+            DateTimeOffset time = DateTimeOffset.Now;
+            TimeSpan span = time - lastTime;
+            lastTime = time;
+            timesTicked++;
+            ProgressText.Text = funnyText[timesTicked%15];
+        }
+
+        string []funnyText = {"Loading Please Wait..",
+                                 "Please Wait More.. More Loading",
+                                 "Feeling Hungry? Please order food",
+                                 "Getting Data From Internet",
+                                 "Loading Brains",
+                                 "Applying Advanced Algorithms which no one understands",
+                                 "Gone to EAT, Be right Back!",
+                                 "Please Wait.. About to Load",
+                                 "Be ready to experience something cool",
+                                 "Filling RocketFuel.. Please Wait",
+                                 "Loading More Data",
+                             "Just a few seconds more",
+                             "Better late than never",
+                             "Word Hard. Dream Big",
+                             "The Machine is Learning",
+                             "Getting Videos...",
+                             "Getting some nice Text"};
     }
 }

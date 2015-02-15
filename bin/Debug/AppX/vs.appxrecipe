@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T13:30:03.177</Modified>
+      <Modified>2015-02-15T13:58:42.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
@@ -106,11 +106,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T13:26:29.050</Modified>
+      <Modified>2015-02-15T13:58:42.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-15T13:23:22.212</Modified>
+      <Modified>2015-02-15T13:58:42.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
