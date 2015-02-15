@@ -151,7 +151,7 @@ namespace Wikivid1._0.ViewModel
                 System.Net.Http.HttpResponseMessage response = await searchClient.GetAsync(url);
                 response.EnsureSuccessStatusCode();
                 responseText = await response.Content.ReadAsStringAsync();
-                if (responseText.Contains("The page you specified doesn't exist"))
+                if (responseText.Contains("The page you specified doesn't exist") || responseText.Contains("{\"code\":\"invalidtitle\""))
                 {
                     var frame = (Frame)Window.Current.Content;
                     frame.Navigate(typeof(MainPage),"BAD");

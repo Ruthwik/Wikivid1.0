@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T05:42:07.814</Modified>
+      <Modified>2015-02-15T05:51:02.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
