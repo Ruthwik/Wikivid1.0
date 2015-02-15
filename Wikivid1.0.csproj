@@ -110,7 +110,6 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Common\Search.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="Common\WikiFetch.cs" />
     <Compile Include="Common\WikiRestFetch.cs" />
@@ -172,6 +171,9 @@
     </Reference>
     <Reference Include="Google.Apis.YouTube.v3">
       <HintPath>packages\Google.Apis.YouTube.v3.1.9.0.1260\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.YouTube.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>lib\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll</HintPath>

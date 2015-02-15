@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Google.Apis.Services;
+using Google.Apis.YouTube.v3;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -6,6 +8,8 @@ using System.Diagnostics;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using Wikivid1._0.Common;
 
 
 
@@ -29,6 +33,21 @@ public class LinkItem
 
 namespace Wikivid1._0.ViewModel
 {
+    public class JsonYoutube
+    {
+        public JsonYoutube(string json)
+        {
+            //json.Replace("{[", "{");
+          //  json.Replace("]}", "}");
+            JObject jObject = JObject.Parse(json);
+            JToken jItems = jObject["items"][0];
+            JToken js = jItems["id"];
+            vidId = (string)js["videoId"];
+       
+        }
+
+        public string vidId { get; set; }
+    }
     public class JsonResult
     {
         public JsonResult(string json)
@@ -77,16 +96,16 @@ namespace Wikivid1._0.ViewModel
 
     public class WikiResultViewModel
     {
-        public ObservableCollection<DispItem> di { get; set; }
+        public static ObservableCollection<DispItem> di { get; set; }
 
         public WikiResultViewModel(string url)
         
         {
             Debug.WriteLine("initiating sequence for " + url);
             di = new ObservableCollection<DispItem>();
-           // di.Add(new DispItem() { Title = "HELLO", Text = "OMG" });
+            //di.Add(new DispItem() { Title = "HELLO", Text = "OMG" });
            fetchRest(url);
-           
+            //fetchRestYoutube(url,0);
         }
 
         public async void fetchRest(string url)
@@ -158,23 +177,31 @@ namespace Wikivid1._0.ViewModel
             //Debug.WriteLine(""+responseText);
             if (jR.html != null && jR.title != null) FindWiki(jR.title, jR.html);
             else Debug.WriteLine("NULL IN JSON RESPONSE");
+            populateYouTube();
+            //di[1].Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
             //Find(responseText);
+        }
+
+        private void populateYouTube()
+        {
+            fetchRestYoutube(di[0].Title, 0);
+            for (int i = 1; i < di.Count;i++ )
+            {
+
+                fetchRestYoutube(di[0].Title + ' ' + di[i].Title, i);
+                //d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
+            }
         }
 
         string a = "", b = "", c = "";
-        public async void fetch(string url)
+        public async void fetchRestYoutube(string url,int i)
         {
+            url = @"https://www.googleapis.com/youtube/v3/search?type=video&part=snippet&q="+ url.Replace("_","%20") + @"&maxResults=1&videoEmbeddable=true&key=AIzaSyCRwECOq2X6FXqSfboGYfBPUNNKLah_SQY";
             string responseText = "";
+            JsonYoutube jYT;
             int respCode = 0;
             try
             {
-
-                // used to build entire input
-                StringBuilder sb = new StringBuilder();
-
-                // used on each read operation
-                byte[] buf = new byte[8192];
-
                 // prepare the web page we will be asking for
                 System.Net.Http.HttpClient searchClient;
                 searchClient = new System.Net.Http.HttpClient();
@@ -182,6 +209,7 @@ namespace Wikivid1._0.ViewModel
                 System.Net.Http.HttpResponseMessage response = await searchClient.GetAsync(url);
                 response.EnsureSuccessStatusCode();
                 responseText = await response.Content.ReadAsStringAsync();
+                jYT = new JsonYoutube(responseText);
             }
             catch (System.Threading.Tasks.TaskCanceledException tcex)
             {
@@ -218,101 +246,7 @@ namespace Wikivid1._0.ViewModel
             {
                 throw ex;
             }
-            //string heading, heading_text;
-            //List<string> sub_heading, sub_text;
-            //heading = findheading(responseText);
-            //heading_text = findheading_text(responseText);
-            //Debug.WriteLine(heading);
-            //heading =ReadLines(responseText).Skip(x-1).Take(x).First();
-
-            //Debug.WriteLine(""+responseText);
-            //FindWiki(responseText);
-            //Find(responseText);
-        }
-
-        public string findheading(string file)
-        {
-            int i, j;
-            i = file.IndexOf("<h1");
-            j = file.IndexOf("</h1>", file.IndexOf("<h1"));
-            j = j + 5;
-            //Debug.WriteLine("{0} {1}", i, j);
-            string found = file.Substring(i, j);
-            return found;
-        }
-        public string findheading_text(string file)
-        {
-            int i, j;
-            i = file.IndexOf("<p", file.IndexOf("<h1"));
-            j = file.IndexOf("/p>", file.IndexOf("<h1"));
-            j = j + 2;
-            //Debug.WriteLine("{0} {1}", i, j);
-            string found = file.Substring(i, j);
-            return found;
-        }
-        public async void fetchYouTube(string url, int n)
-        {
-            string responseText = "";
-            int respCode = 0;
-            try
-            {
-
-                // used to build entire input
-                StringBuilder sb = new StringBuilder();
-
-                // used on each read operation
-                byte[] buf = new byte[8192];
-
-                // prepare the web page we will be asking for
-                System.Net.Http.HttpClient searchClient;
-                searchClient = new System.Net.Http.HttpClient();
-                //searchClient.MaxResponseContentBufferSize = 256000;
-                System.Net.Http.HttpResponseMessage response = await searchClient.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-                responseText = await response.Content.ReadAsStringAsync();
-            }
-            catch (System.Threading.Tasks.TaskCanceledException tcex)
-            {
-                Debug.WriteLine("TASK CANCEL EXCEPTION" + tcex);
-                throw tcex;
-            }
-            catch (System.Net.Http.HttpRequestException httpex)
-            {
-                Debug.WriteLine("HTTP EXCEPTION" + httpex);
-                throw httpex;
-            }
-            catch (WebException e)
-            {
-                string text = string.Empty;
-                string outRespType = string.Empty;
-                if (e.Response != null)
-                {
-                    using (WebResponse response = e.Response)
-                    {
-                        outRespType = response.ContentType;
-                        HttpWebResponse exceptionResponse = (HttpWebResponse)response;
-                        respCode = (int)exceptionResponse.StatusCode;
-
-                        using (System.IO.Stream data = response.GetResponseStream())
-                        {
-                            text = new System.IO.StreamReader(data).ReadToEnd();
-                        };
-                    };
-                }
-                throw e;
-            }
-
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            //Debug.WriteLine(""+responseText);
-            //FindWiki(responseText);
-            List<LinkItem> l = Find(responseText);
-            //di[n].Link1 = l[0].Text;
-            //di[n].Link1 = l[1].Text;
-            //di[n].Link1 = l[2].Text;
+            di[i].Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + jYT.vidId + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
         }
 
         public List<LinkItem> Find(string file)
@@ -424,7 +358,7 @@ namespace Wikivid1._0.ViewModel
 
             //Call for youtube link here
             //fetchYouTube("https://www.youtube.com/results?search_query="+d.Title.Replace(' ','+'));
-            d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>"; 
+            //d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>"; 
             //d.Link2 = b;
             //d.Link3 = c;
             //
@@ -483,7 +417,7 @@ namespace Wikivid1._0.ViewModel
                // Debug.WriteLine(d.Text);
                 //call for youtube links here
                 //fetchYouTube("https://www.youtube.com/results?search_query=" + di[0].Title.Replace(' ', '+') + '+' + d.Title.Replace(' ', '+'));
-                d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>"; 
+              //  d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>"; 
                 //d.Link2 = b;
                 //d.Link3 = c;
                 di.Add(d);
