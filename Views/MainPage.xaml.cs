@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Wikivid1._0.Model;
 using Windows.ApplicationModel.Search;
 using Windows.Data.Json;
+using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage.Streams;
@@ -32,11 +33,68 @@ namespace Wikivid1._0
     {
         private Task<string> currentHttpTask;
         private HttpClient httpClient;
+        private IAsyncOperation<XmlDocument> currentXmlRequestOp;
 
         public MainPage()
         {
             this.InitializeComponent();
             httpClient = new HttpClient();
+        }
+
+        private void AddSuggestionFromNode(IXmlNode node, SearchSuggestionCollection suggestions)
+        {
+            string text = "";
+            string description = "";
+            string url = "";
+            string imageUrl = "";
+            string imageAlt = "";
+
+            foreach (IXmlNode subNode in node.ChildNodes)
+            {
+                if (subNode.NodeType != NodeType.ElementNode)
+                {
+                    continue;
+                }
+                if (subNode.NodeName.Equals("Text", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    text = subNode.InnerText;
+                }
+                else if (subNode.NodeName.Equals("Description", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    description = subNode.InnerText;
+                }
+                else if (subNode.NodeName.Equals("Url", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    url = subNode.InnerText;
+                }
+                else if (subNode.NodeName.Equals("Image", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    if (subNode.Attributes.GetNamedItem("source") != null)
+                    {
+                        imageUrl = subNode.Attributes.GetNamedItem("source").InnerText;
+                    }
+                    if (subNode.Attributes.GetNamedItem("alt") != null)
+                    {
+                        imageAlt = subNode.Attributes.GetNamedItem("alt").InnerText;
+                    }
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                // No proper suggestion item exists
+            }
+            else if (string.IsNullOrWhiteSpace(url))
+            {
+                suggestions.AppendQuerySuggestion(text);
+            }
+            else
+            {
+                // The following image should not be used in your application for Result Suggestions.  Replace the image with one that is tailored to your content
+                Uri uri = string.IsNullOrWhiteSpace(imageUrl) ? new Uri("ms-appx:///Assets/SDK_ResultSuggestionImage.png") : new Uri(imageUrl);
+                RandomAccessStreamReference imageSource = RandomAccessStreamReference.CreateFromUri(uri);
+                suggestions.AppendResultSuggestion(text, description, text, imageSource, imageAlt);
+            }
         }
 
         /// <summary>
@@ -48,25 +106,39 @@ namespace Wikivid1._0
         private async Task GetSuggestionsAsync(string str, SearchSuggestionCollection suggestions)
         {
             // Cancel the previous suggestion request if it is not finished.
-            if (currentHttpTask != null)
+            if (currentXmlRequestOp != null)
             {
-                currentHttpTask.AsAsyncOperation<string>().Cancel();
+                currentXmlRequestOp.Cancel();
             }
 
-            // Get the suggestions from an open search service.
-            currentHttpTask = httpClient.GetStringAsync(str);
-            string response = await currentHttpTask;
-            JsonArray parsedResponse = JsonArray.Parse(response);
-            if (parsedResponse.Count > 1)
+            // Get the suggestion from a web service.
+            currentXmlRequestOp = XmlDocument.LoadFromUriAsync(new Uri(str));
+            XmlDocument doc = await currentXmlRequestOp;
+            currentXmlRequestOp = null;
+            XmlNodeList nodes = doc.GetElementsByTagName("Section");
+            if (nodes.Count > 0)
             {
-                suggestions.AppendSearchSeparator("Exact Match");
-                foreach (JsonValue value in parsedResponse[1].GetArray())
+                IXmlNode section = nodes[0];
+                foreach (IXmlNode node in section.ChildNodes)
                 {
-                    //suggestions.AppendQuerySuggestion(value.GetString());
-                    var imageUri = new Uri("ms-appx:///test.png");
-                    var imageRef = RandomAccessStreamReference.CreateFromUri(imageUri);
-                    suggestions.AppendResultSuggestion(value.GetString(), "", value.GetString(), imageRef, "");
-                    //suggestions.AppendResultSuggestion(value.GetString(), "Details", "baz", imageRef, "Result");
+                    if (node.NodeType != NodeType.ElementNode)
+                    {
+                        continue;
+                    }
+                    if (node.NodeName.Equals("Separator", StringComparison.CurrentCultureIgnoreCase))
+                    {
+                        string title = null;
+                        IXmlNode titleAttr = node.Attributes.GetNamedItem("title");
+                        if (titleAttr != null)
+                        {
+                            title = titleAttr.NodeValue.ToString();
+                        }
+                        suggestions.AppendSearchSeparator(String.IsNullOrWhiteSpace(title) ? "Suggestions" : title);
+                    }
+                    else
+                    {
+                        AddSuggestionFromNode(node, suggestions);
+                    }
                 }
             }
         }
@@ -93,7 +165,7 @@ namespace Wikivid1._0
                
                 try
                 {
-                     url = @"http://en.wikipedia.org/w/api.php?action=opensearch&search=" + queryText + @"&limit=10&namespace=0&format=json";
+                     url = @"http://en.wikipedia.org/w/api.php?action=opensearch&search=" + queryText + @"&limit=10&namespace=0&format=xml";
                     // Use the web service Url entered in the UrlTextBox that supports OpenSearch Suggestions in order to see suggestions come from the web service.
                     // See http://www.opensearch.org/Specifications/OpenSearch/Extensions/Suggestions/1.0 for details on OpenSearch Suggestions format.
                     // Replace "{searchTerms}" of the Url with the query string.
