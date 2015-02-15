@@ -143,7 +143,7 @@ namespace Wikivid1._0.Views
            // WikiFetch c = new WikiFetch();
            // c.fetch("http://en.wikipedia.org/wiki/" + sq.Query.Replace(" ","_"));
 
-            this.DataContext = new WikiResultViewModel("http://en.wikipedia.org/wiki/" + sq.Query.Replace(" ", "_"));
+            this.DataContext = new WikiResultViewModel(sq.Query.Replace(" ", "_"));
             
         }
 

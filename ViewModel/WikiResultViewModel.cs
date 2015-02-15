@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -28,6 +29,22 @@ public class LinkItem
 
 namespace Wikivid1._0.ViewModel
 {
+    public class JsonResult
+    {
+        public JsonResult(string json)
+        {
+            JObject jObject = JObject.Parse(json);
+            JToken jParse = jObject["parse"];
+            title = (string)jParse["title"];
+            JToken jText = jParse["text"];
+            html = (string)jText["*"];
+        }
+
+        public string title { get; set; }
+
+        public string html { get; set; }
+    }
+
     public class DispItem
     {
         public string Title
@@ -68,10 +85,82 @@ namespace Wikivid1._0.ViewModel
             Debug.WriteLine("initiating sequence for " + url);
             di = new ObservableCollection<DispItem>();
            // di.Add(new DispItem() { Title = "HELLO", Text = "OMG" });
-           fetch(url);
+           fetchRest(url);
            
         }
-        
+
+        public async void fetchRest(string url)
+        {
+            JsonResult jR;
+            url = @"http://en.wikipedia.org/w/api.php?format=json&action=parse&prop=text&page="+url;
+            string responseText = "";
+            int respCode = 0;
+            try
+            {
+
+                // used to build entire input
+                StringBuilder sb = new StringBuilder();
+
+                // used on each read operation
+                byte[] buf = new byte[8192];
+
+                // prepare the web page we will be asking for
+                System.Net.Http.HttpClient searchClient;
+                searchClient = new System.Net.Http.HttpClient();
+                //searchClient.MaxResponseContentBufferSize = 256000;
+                System.Net.Http.HttpResponseMessage response = await searchClient.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                responseText = await response.Content.ReadAsStringAsync();
+                jR = new JsonResult(responseText);
+            }
+            catch (System.Threading.Tasks.TaskCanceledException tcex)
+            {
+                Debug.WriteLine("TASK CANCEL EXCEPTION" + tcex);
+                throw tcex;
+            }
+            catch (System.Net.Http.HttpRequestException httpex)
+            {
+                Debug.WriteLine("HTTP EXCEPTION" + httpex);
+                throw httpex;
+            }
+            catch (WebException e)
+            {
+                string text = string.Empty;
+                string outRespType = string.Empty;
+                if (e.Response != null)
+                {
+                    using (WebResponse response = e.Response)
+                    {
+                        outRespType = response.ContentType;
+                        HttpWebResponse exceptionResponse = (HttpWebResponse)response;
+                        respCode = (int)exceptionResponse.StatusCode;
+
+                        using (System.IO.Stream data = response.GetResponseStream())
+                        {
+                            text = new System.IO.StreamReader(data).ReadToEnd();
+                        };
+                    };
+                }
+                throw e;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            //string heading, heading_text;
+            //List<string> sub_heading, sub_text;
+            //heading = findheading(responseText);
+            //heading_text = findheading_text(responseText);
+            //Debug.WriteLine(heading);
+            //heading =ReadLines(responseText).Skip(x-1).Take(x).First();
+
+            //Debug.WriteLine(""+responseText);
+            if (jR.html != null && jR.title != null) FindWiki(jR.title, jR.html);
+            else Debug.WriteLine("NULL IN JSON RESPONSE");
+            //Find(responseText);
+        }
+
         string a = "", b = "", c = "";
         public async void fetch(string url)
         {
@@ -137,7 +226,7 @@ namespace Wikivid1._0.ViewModel
             //heading =ReadLines(responseText).Skip(x-1).Take(x).First();
 
             //Debug.WriteLine(""+responseText);
-            FindWiki(responseText);
+            //FindWiki(responseText);
             //Find(responseText);
         }
 
@@ -267,7 +356,7 @@ namespace Wikivid1._0.ViewModel
             }
             return list;
         }
-        public ObservableCollection<DispItem> FindWiki(string file)
+        public ObservableCollection<DispItem> FindWiki(string title,string file)
         {
             //Debug.WriteLine(heading + '\n' + heading_text + '\n');
             List<LinkItem> list = new List<LinkItem>();
@@ -286,7 +375,7 @@ namespace Wikivid1._0.ViewModel
 
             // 3.
             // Get href attribute.
-            Match m2 = Regex.Match(file, @"(<h1 id=\""firstHeading\"".*?>.*?</h1>)",
+            /*Match m2 = Regex.Match(file, @"(<h1 id=\""firstHeading\"".*?>.*?</h1>)",
             RegexOptions.Singleline);
             if (m2.Success)
             {
@@ -297,7 +386,8 @@ namespace Wikivid1._0.ViewModel
             // Remove inner tags from text.
             string t = Regex.Replace(i.Href, @"\s*<.*?>\s*", "",
             RegexOptions.Singleline);
-            d.Title = t;
+            */
+            d.Title = title;
             //Debug.WriteLine(d.Title);
             //list.Add(i);
             //}
@@ -316,7 +406,7 @@ namespace Wikivid1._0.ViewModel
 
             // 7.
             // Get href attribute.
-            m2 = Regex.Match(file, @"(<p>.*?</p>)",
+            Match m2 = Regex.Match(file, @"(<p>.*?</p>)",
             RegexOptions.Singleline);
             if (m2.Success)
             {
@@ -325,7 +415,7 @@ namespace Wikivid1._0.ViewModel
 
             // 8.
             // Remove inner tags from text.
-            t = Regex.Replace(i.Href, @" <.*?>\s*", " ", RegexOptions.Singleline);
+            string t = Regex.Replace(i.Href, @" <.*?>\s*", " ", RegexOptions.Singleline);
             t = Regex.Replace(t, @"\s*<.*?>\s*", "", RegexOptions.Singleline);
             t = Regex.Replace(t, @"\[.*?\]", "", RegexOptions.Singleline);
             d.Text = t;

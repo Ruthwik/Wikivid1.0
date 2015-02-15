@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPP-E</Machine>
-    <WindowsUser>Ruthwik</WindowsUser>
+    <Machine>SWATI</Machine>
+    <WindowsUser>swatisharma</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3c1263e-7b9d-497c-ad8e-5229d3d78c36</PackageIdentityName>
-    <IntermediateOutputPath>E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>A056B4A4CD7827576E1C90FE772377AF51092B7949F7D97B0535F948DABAB791</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_1.0.0.0_neutral__baj3f2dng8cba</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_baj3f2dng8cba!App</RegisteredUserModeAppID>
@@ -17,60 +17,96 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T18:46:23.513</Modified>
+      <Modified>2015-02-15T07:46:11.255</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-14T19:00:46.911</Modified>
+      <Modified>2015-02-15T08:03:21.108</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
+      <PackagePath>Google.Apis.Auth.dll</PackagePath>
+      <Modified>2015-02-14T19:28:14.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.PlatformServices.dll">
+      <PackagePath>Google.Apis.Auth.PlatformServices.dll</PackagePath>
+      <Modified>2015-02-14T19:28:14.942</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Core.1.9.1\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.Core.dll">
+      <PackagePath>Google.Apis.Core.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.651</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.dll">
+      <PackagePath>Google.Apis.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.1.9.1\lib\netcore45\Google.Apis.PlatformServices.dll">
+      <PackagePath>Google.Apis.PlatformServices.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.YouTube.v3.1.9.0.1260\lib\portable-net40+sl50+win+wpa81+wp80\Google.Apis.YouTube.v3.dll">
+      <PackagePath>Google.Apis.YouTube.v3.dll</PackagePath>
+      <Modified>2015-02-14T19:28:20.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Newtonsoft.Json.6.0.6\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.124</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Microsoft.Net.Http.2.2.28\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2015-02-14T19:28:04.146</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T12:34:10.037</Modified>
+      <Modified>2015-02-14T19:16:31.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T12:34:10.040</Modified>
+      <Modified>2015-02-14T19:16:31.042</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T12:34:10.058</Modified>
+      <Modified>2015-02-14T19:16:31.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T12:34:10.065</Modified>
+      <Modified>2015-02-14T19:16:31.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\Assets\maxresdefault.jpg">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\Assets\maxresdefault.jpg">
       <PackagePath>Assets\maxresdefault.jpg</PackagePath>
-      <Modified>2015-02-14T12:34:10.072</Modified>
+      <Modified>2015-02-14T19:16:31.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-14T18:46:21.870</Modified>
+      <Modified>2015-02-15T07:46:08.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-14T18:46:21.870</Modified>
+      <Modified>2015-02-15T07:46:08.129</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-14T19:00:46.578</Modified>
+      <Modified>2015-02-15T07:46:08.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-14T19:00:46.570</Modified>
+      <Modified>2015-02-14T19:16:31.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Education.com\cse textbooks\RP\acadaccelerator\Wikivid1.0\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-14T18:46:23.033</Modified>
+      <Modified>2015-02-15T07:46:10.199</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
