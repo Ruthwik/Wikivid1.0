@@ -94,7 +94,7 @@
             <SearchBox  x:Name="SearchBoxSuggestions" Grid.Column="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Height="37" Width="233"/>
         </Grid>
 
-        <ListView SelectionMode="None" x:Name="lw" ItemsSource="{Binding Path=di,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="White" VerticalAlignment="Stretch" Height="Auto"  Grid.Row="1" >
+        <ListView SelectionMode="None" x:Name="lw" ItemsSource="{Binding Path=di,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Background="White" VerticalAlignment="Stretch" Height="Auto"  Grid.Row="1" Margin="40,0,40,0" >
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -104,15 +104,20 @@
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Vertical" Grid.Column="0">
-                            <TextBlock Tag="1" Text="{Binding Title}" FontSize="30" Foreground="Black" />
-                            <TextBlock x:ConnectionId='2' Tag="2" Text="{Binding Text}" FontSize="15" Foreground="Black" TextWrapping="WrapWholeWords" MaxLines="15"                           />
-                            <Button x:ConnectionId='3' Content="Read More"                      Height="30" Width="100" Background="Black"/>
+                            <TextBlock x:ConnectionId='2' Tag="1" Text="{Binding Title}" FontSize="30" Foreground="Black"                                                   />
+                            <TextBlock x:ConnectionId='3' Tag="2" Text="{Binding Text}" FontSize="15" Foreground="Black" TextWrapping="WrapWholeWords" MaxLines="15"                           />
+                            <TextBox x:ConnectionId='4' Tag="1" Text="{Binding Link1}" FontSize="1" Foreground="Black"                                   IsEnabled="False" />
+                            <Button x:ConnectionId='5' Content="Read More"                      Height="30" Width="100" Background="Black"/>
                         </StackPanel>
-                        <WebView x:ConnectionId='1' VerticalAlignment="Top" Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390"                                                  Grid.Column="1"/>
-                    </Grid>
+                        <WebView x:ConnectionId='1' HorizontalAlignment="Right" VerticalAlignment="Top" Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390"                                                  Grid.Column="1" />
+
+                    </Grid> 
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <ProgressRing IsActive="True"  Name="ProgressRing"  Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="90"  Width="90" Foreground="#FF682CF3"></ProgressRing>
+
+
     </Grid>
 </Page>
 

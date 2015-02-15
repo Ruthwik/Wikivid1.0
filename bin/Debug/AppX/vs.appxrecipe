@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-15T11:04:39.389</Modified>
+      <Modified>2015-02-15T13:26:30.236</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T11:16:53.589</Modified>
+      <Modified>2015-02-15T13:30:03.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
@@ -98,23 +98,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-15T11:04:38.071</Modified>
+      <Modified>2015-02-15T13:26:29.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-15T11:04:38.076</Modified>
+      <Modified>2015-02-15T13:26:29.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T11:04:38.077</Modified>
+      <Modified>2015-02-15T13:26:29.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-14T19:16:31.474</Modified>
+      <Modified>2015-02-15T13:23:22.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\swatisharma\Desktop\Rachit\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-15T11:04:39.116</Modified>
+      <Modified>2015-02-15T13:26:29.919</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
 using System.Text;
@@ -64,8 +65,19 @@ namespace Wikivid1._0.ViewModel
         public string html { get; set; }
     }
 
-    public class DispItem
+    public class DispItem : INotifyPropertyChanged
     {
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
         public string Title
         {
             get;
@@ -76,11 +88,18 @@ namespace Wikivid1._0.ViewModel
             get;
             set;
         }
-        //    private string _Link1;
+        private string _Link1;
         public string Link1
         {
-            get;
-            set;
+            get
+            {
+                return this._Link1;
+            }
+            set
+            {
+                this._Link1 = value;
+                NotifyPropertyChanged("Link1");
+            }
         }
         public string Link2
         {
@@ -103,7 +122,7 @@ namespace Wikivid1._0.ViewModel
         {
             Debug.WriteLine("initiating sequence for " + url);
             di = new ObservableCollection<DispItem>();
-            //di.Add(new DispItem() { Title = "HELLO", Text = "OMG" });
+            //di.Add(new DispItem() { Title = "", Text = "" });
            fetchRest(url);
             //fetchRestYoutube(url,0);
         }
@@ -184,13 +203,15 @@ namespace Wikivid1._0.ViewModel
 
         private void populateYouTube()
         {
-            fetchRestYoutube(di[0].Title, 0);
-            for (int i = 1; i < di.Count;i++ )
+            
+            for (int i = di.Count-1; i >=0;i-- )
             {
 
                 fetchRestYoutube(di[0].Title + ' ' + di[i].Title, i);
                 //d.Link1 = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
             }
+            //fetchRestYoutube(di[0].Title, 0);
+
         }
 
         string a = "", b = "", c = "";
@@ -374,8 +395,13 @@ namespace Wikivid1._0.ViewModel
 
             // 10.
             // Loop over each match.
+            int counter = 0;
             foreach (Match m in m1)
             {
+                if (counter == 5)
+                    break;
+                else
+                    counter++;
                 string value = m.Groups[1].Value;
                 //LinkItem i = new LinkItem();
                d = new DispItem();

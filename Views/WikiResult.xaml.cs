@@ -161,13 +161,13 @@ namespace Wikivid1._0.Views
 
         private void WebView_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
         {
-            string html = @"<iframe width=""640"" height=""390"" src=""http://www.youtube.com/embed/" + "ooDrCr-8ALI" + @"?rel=0"" frameborder=""0"" allowfullscreen></iframe>";
-            WebView v = (WebView)sender;
-            if (v.Tag != null)
-            {
-                string b = v.Tag.ToString();
-                v.NavigateToString(b);
-            }
+            
+            //WebView v = (WebView)sender;
+            //if (v.Tag != null)
+            //{
+            //    string b = v.Tag.ToString();
+            //    v.NavigateToString(b);
+            //}
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -192,6 +192,37 @@ namespace Wikivid1._0.Views
             if (Lines < 19)
             {
                 myTB.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void TextBlock_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
+        {
+            TextBlock tB = (TextBlock)sender;
+            if (tB.Text != null)
+            {
+                ProgressRing.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void SMallTextBlock_DataContextChanged_1(FrameworkElement sender, DataContextChangedEventArgs args)
+        {
+            TextBlock tB = (TextBlock)sender;
+            string text = tB.Text;
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string text;
+            TextBox tb = (TextBox)sender;
+            if (tb.Text != null)
+            {
+                text = tb.Text;
+                StackPanel sp = (StackPanel)tb.Parent;
+                Grid gr = (Grid)sp.Parent;
+                WebView myTB = (from child in gr.Children
+                                where child is WebView
+                                select (WebView)child).FirstOrDefault();
+                myTB.NavigateToString(text);
             }
         }
 
