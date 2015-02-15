@@ -117,7 +117,7 @@
         </ListView>
         <StackPanel Orientation="Vertical"  Grid.Row="1">
             <ProgressRing IsActive="True"  Name="ProgressRing"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="90" Margin="0,20,0,20"  Width="90" Foreground="#FF682CF3"></ProgressRing>
-            <TextBlock Name="ProgressText" Text="This may take up to 40 seconds" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="25" Foreground="Black"></TextBlock>
+            <TextBlock Name="ProgressText" Text="This will definitely take a few seconds" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="25" Foreground="Black"></TextBlock>
         </StackPanel>
 
     </Grid>

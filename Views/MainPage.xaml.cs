@@ -247,5 +247,9 @@ namespace Wikivid1._0
             };
             this.Frame.Navigate(typeof(Views.WikiResult), sq);
         }
+        private void ConnectionIndicator_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

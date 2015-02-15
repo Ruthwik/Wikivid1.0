@@ -52,6 +52,12 @@
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Arrow-Down-512.png">
+      <PackagePath>Assets\Arrow-Down-512.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Internet.png">
+      <PackagePath>Assets\Internet.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -64,15 +70,29 @@
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\WorkOffline.png">
+      <PackagePath>Assets\WorkOffline.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\maxresdefault.jpg">
       <PackagePath>Assets\maxresdefault.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\ConnectionIndicator.xbf">
+      <PackagePath>Views\ConnectionIndicator.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>

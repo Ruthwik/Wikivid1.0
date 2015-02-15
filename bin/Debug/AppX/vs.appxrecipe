@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3c1263e-7b9d-497c-ad8e-5229d3d78c36</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>A056B4A4CD7827576E1C90FE772377AF51092B7949F7D97B0535F948DABAB791</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B5454EA10E80AC3123D6F458A65BEA57C7ED787D9CB0B80770ECB408B3FACE7C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_1.0.0.0_neutral__baj3f2dng8cba</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3c1263e-7b9d-497c-ad8e-5229d3d78c36_baj3f2dng8cba!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3c1263e-7b9d-497c-ad8e-5229d3d78c36</RegisteredPackageID>
@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-15T05:02:34.491</Modified>
+      <Modified>2015-02-15T07:33:33.128</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T05:51:02.964</Modified>
+      <Modified>2015-02-15T07:36:42.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
@@ -70,7 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Microsoft.Threading.Tasks.dll">
       <PackagePath>Microsoft.Threading.Tasks.dll</PackagePath>
-      <Modified>2015-02-15T01:31:48.804</Modified>
+      <Modified>2015-02-15T01:31:49.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Arrow-Down-512.png">
+      <PackagePath>Assets\Arrow-Down-512.png</PackagePath>
+      <Modified>2015-02-15T07:27:20.468</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Internet.png">
+      <PackagePath>Assets\Internet.png</PackagePath>
+      <Modified>2015-02-15T07:27:20.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -85,12 +93,26 @@
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-14T19:16:31.059</Modified>
+      <Modified>2015-02-14T19:16:31.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-14T19:16:31.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-14T19:16:31.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-02-14T19:16:31.062</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\WorkOffline.png">
+      <PackagePath>Assets\WorkOffline.png</PackagePath>
+      <Modified>2015-02-15T07:27:20.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\Assets\maxresdefault.jpg">
       <PackagePath>Assets\maxresdefault.jpg</PackagePath>
@@ -98,23 +120,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-02-15T05:02:32.905</Modified>
+      <Modified>2015-02-15T07:33:32.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\ConnectionIndicator.xbf">
+      <PackagePath>Views\ConnectionIndicator.xbf</PackagePath>
+      <Modified>2015-02-15T07:36:41.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-15T05:42:07.424</Modified>
+      <Modified>2015-02-15T07:36:41.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T05:02:32.910</Modified>
+      <Modified>2015-02-15T07:36:41.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-15T05:42:07.402</Modified>
+      <Modified>2015-02-15T07:28:03.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-15T05:02:34.272</Modified>
+      <Modified>2015-02-15T07:33:32.992</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

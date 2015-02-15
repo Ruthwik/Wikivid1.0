@@ -5,6 +5,7 @@
     xmlns:local="using:Wikivid1._0"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:indicator="using:SimpleConnectionControl.Control"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -13,10 +14,11 @@
             <StackPanel.Background>
                 <ImageBrush ImageSource="ms-appx:///Assets/maxresdefault.jpg" Stretch="UniformToFill"/>
             </StackPanel.Background>
-            
-            <SearchBox x:ConnectionId='1' x:Name="SearchBoxSuggestions" Height="35" Width="400" Margin="0,300,0,0"                                                                                                                                                                                       HorizontalAlignment="Center" VerticalAlignment="Center"  FocusOnKeyboardInput="True"/>
-            <TextBlock x:Name="tbError" Height="35" Width="Auto" Text="Type to Explore" FontSize="25" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="tbError" Height="Auto" Width="Auto" Text="Type to Explore" Margin="0,200,0,0" FontSize="48" Foreground="#FF344578" HorizontalAlignment="Center" FontFamily="Arial" FontWeight="Bold"></TextBlock>
+            <SearchBox x:ConnectionId='2' x:Name="SearchBoxSuggestions" Height="35" Width="400" Margin="0,50,0,0"                                                                                                                                                                                       HorizontalAlignment="Center" VerticalAlignment="Center"  FocusOnKeyboardInput="True"/>
+
         </StackPanel>
+        <indicator:ConnectionIndicator x:ConnectionId='1' HorizontalAlignment="Right" Margin="0,414,541,30"                                     Width="324" />
     </Grid>
 </Page>
 

@@ -124,27 +124,29 @@ namespace Wikivid1._0.Wikivid1_0_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "Wikivid1._0.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Wikivid1._0.Views.WikiResult";
-            _typeNameTable[4] = "Wikivid1._0.Common.ObservableDictionary";
-            _typeNameTable[5] = "Object";
-            _typeNameTable[6] = "String";
-            _typeNameTable[7] = "Wikivid1._0.Common.NavigationHelper";
-            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "SimpleConnectionControl.Control.ConnectionIndicator";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[2] = "Wikivid1._0.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "Wikivid1._0.Views.WikiResult";
+            _typeNameTable[5] = "Wikivid1._0.Common.ObservableDictionary";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "String";
+            _typeNameTable[8] = "Wikivid1._0.Common.NavigationHelper";
+            _typeNameTable[9] = "Windows.UI.Xaml.DependencyObject";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::Wikivid1._0.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Wikivid1._0.Views.WikiResult);
-            _typeTable[4] = typeof(global::Wikivid1._0.Common.ObservableDictionary);
-            _typeTable[5] = typeof(global::System.Object);
-            _typeTable[6] = typeof(global::System.String);
-            _typeTable[7] = typeof(global::Wikivid1._0.Common.NavigationHelper);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::SimpleConnectionControl.Control.ConnectionIndicator);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[2] = typeof(global::Wikivid1._0.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::Wikivid1._0.Views.WikiResult);
+            _typeTable[5] = typeof(global::Wikivid1._0.Common.ObservableDictionary);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::System.String);
+            _typeTable[8] = typeof(global::Wikivid1._0.Common.NavigationHelper);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.DependencyObject);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,10 +181,11 @@ namespace Wikivid1._0.Wikivid1_0_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Wikivid1._0.MainPage(); }
-        private object Activate_3_WikiResult() { return new global::Wikivid1._0.Views.WikiResult(); }
-        private object Activate_4_ObservableDictionary() { return new global::Wikivid1._0.Common.ObservableDictionary(); }
-        private void MapAdd_4_ObservableDictionary(object instance, object key, object item)
+        private object Activate_0_ConnectionIndicator() { return new global::SimpleConnectionControl.Control.ConnectionIndicator(); }
+        private object Activate_2_MainPage() { return new global::Wikivid1._0.MainPage(); }
+        private object Activate_4_WikiResult() { return new global::Wikivid1._0.Views.WikiResult(); }
+        private object Activate_5_ObservableDictionary() { return new global::Wikivid1._0.Common.ObservableDictionary(); }
+        private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
@@ -200,54 +203,61 @@ namespace Wikivid1._0.Wikivid1_0_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Wikivid1._0.MainPage
-                userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  SimpleConnectionControl.Control.ConnectionIndicator
+                userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_ConnectionIndicator;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  Wikivid1._0.Views.WikiResult
+            case 2:   //  Wikivid1._0.MainPage
                 userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_WikiResult;
+                userType.Activator = Activate_2_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Wikivid1._0.Views.WikiResult
+                userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_WikiResult;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Wikivid1._0.Common.ObservableDictionary
+            case 5:   //  Wikivid1._0.Common.ObservableDictionary
                 userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_4_ObservableDictionary;
+                userType.DictionaryAdd = MapAdd_5_ObservableDictionary;
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Object
+            case 6:   //  Object
                 xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  String
+            case 7:   //  String
                 xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Wikivid1._0.Common.NavigationHelper
+            case 8:   //  Wikivid1._0.Common.NavigationHelper
                 userType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Windows.UI.Xaml.DependencyObject
+            case 9:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::Wikivid1._0.Wikivid1_0_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

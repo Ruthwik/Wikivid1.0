@@ -23,7 +23,7 @@
   <Applications>
     <Application Id="App" Executable="Wikivid1.0.exe" EntryPoint="Wikivid1._0.App">
       <m2:VisualElements DisplayName="Wikivid1.0" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Wikivid1.0" ForegroundText="light" BackgroundColor="#464646">
-        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#ffffff" />
       </m2:VisualElements>
     </Application>
   </Applications>

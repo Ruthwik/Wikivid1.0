@@ -1,9 +1,15 @@
+Assets\Arrow-Down-512.png
+Assets\Internet.png
 Assets\Logo.scale-100.png
 Assets\maxresdefault.jpg
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
+Assets\SplashScreen.scale-140.png
+Assets\SplashScreen.scale-180.png
 Assets\StoreLogo.scale-100.png
+Assets\WorkOffline.png
 App.xbf
+Views\ConnectionIndicator.xbf
 Views\MainPage.xbf
 Views\WikiResult.xbf
 Wikivid1.0.xr.xml
