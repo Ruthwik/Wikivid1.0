@@ -107,7 +107,10 @@
                             <TextBlock Tag="1" Text="{Binding Title}" FontSize="30" Foreground="Black" DataContextChanged="TextBlock_DataContextChanged" />
                             <TextBlock Tag="2" Text="{Binding Text}" FontSize="15" Foreground="Black" TextWrapping="WrapWholeWords" MaxLines="15" Loaded="TextBlock_Loaded" />
                             <TextBox Tag="1" Text="{Binding Link1}" FontSize="1" Foreground="Black" TextChanged="TextBox_TextChanged" IsEnabled="False" />
-                            <Button Content="Read More" Click="Button_Click" Height="30" Width="100" Background="Black"/>
+                           
+                            <Button Click="Button_Click">
+                                <Image Source="ms-appx:///Assets/Arrow-Down-512.png" Height="30" Width="80"/>
+                            </Button>
                         </StackPanel>
                         <WebView HorizontalAlignment="Right" VerticalAlignment="Top" Tag="{Binding Link1}" DefaultBackgroundColor="Black" Width="640" Height="390"  DataContextChanged="WebView_DataContextChanged" Grid.Column="1" />
 

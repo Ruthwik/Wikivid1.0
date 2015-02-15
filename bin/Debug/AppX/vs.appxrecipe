@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.exe">
       <PackagePath>Wikivid1.0.exe</PackagePath>
-      <Modified>2015-02-15T07:36:42.064</Modified>
+      <Modified>2015-02-15T07:42:24.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\packages\Google.Apis.Auth.1.9.1\lib\netcore45\Google.Apis.Auth.dll">
       <PackagePath>Google.Apis.Auth.dll</PackagePath>
@@ -124,19 +124,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\ConnectionIndicator.xbf">
       <PackagePath>Views\ConnectionIndicator.xbf</PackagePath>
-      <Modified>2015-02-15T07:36:41.693</Modified>
+      <Modified>2015-02-15T07:42:24.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2015-02-15T07:36:41.694</Modified>
+      <Modified>2015-02-15T07:42:24.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Views\WikiResult.xbf">
       <PackagePath>Views\WikiResult.xbf</PackagePath>
-      <Modified>2015-02-15T07:36:41.696</Modified>
+      <Modified>2015-02-15T07:42:24.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\Wikivid1.0.xr.xml">
       <PackagePath>Wikivid1.0.xr.xml</PackagePath>
-      <Modified>2015-02-15T07:28:03.549</Modified>
+      <Modified>2015-02-15T07:42:24.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\priyank-pc\Documents\GitHub\Wikivid1.0\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
